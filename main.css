@@ -62,22 +62,97 @@ button{
     font-size:20px;
     font-family: 'Yaldevi', sans-serif;
 }
-.card-title{
-    font-family: 'Rufina', serif;
-    font-weight:bold;
+.visuallyhidden {
+    z-index: -1;
+    right: 0;
+    opacity: 0;
 }
-.content{
+.container {
+    overflow: hidden;
+    padding: 20px;
+    margin-top: 2em;
+    text-align:center;
+}
+
+h4{
+    font-family: 'Rufina', serif;
+    font-weight: bolder;
+}
+p{
     font-family: 'Yaldevi', sans-serif; 
 }
-.card:hover {
-    transform: scale(1.01);
+
+.card-carousel {
+    --card-width: 80%;
+    --card-max-width: 280px;
+    --card-height: 350px;
+    --carousel-min-width: 600px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    margin-top:20px;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+}
+@media screen and (max-width: 640px) {
+    .card-carousel {
+      margin-left: calc((100vw - var(--carousel-min-width) - 40px) / 2)
+    }
+}
+.card-carousel.smooth-return {
+    transition: all .2s ease;
+}
+.card-carousel .card {
+    background: #f3e3d3;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    transition: inherit;
+    -webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.3);
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.card.highlight {
+    filter: brightness(1)
+}
+.card_img{
+    width:200;
+    height:150px;
+    
+}
+.visu{
+    margin-top:5%;
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+.far{
+    transform: scale(1);
+    transition: .3s ease-in-out;
+    margin: 0px 10px;
+}
+.far:hover{
+    transform: scale(1.5);
 }
 
 /*Contact Section Styling*/
 .contact{
     margin-top:50px;
     text-align:center;
-    background-color:  #E5B383    ;
 }
 .contact-title{
     font-size:30px;
@@ -114,12 +189,14 @@ button{
 }
 .content-about{
     text-align:center;
-    margin-top:25%;
+    margin-top:15%;
+    margin-right:7%;
 }
 
 /*Footer Section Styling*/
 footer{
     margin-top:2.5%;
+    background-color:  #E5B383    ;
 }
 .logo-footer{
     width:40%;

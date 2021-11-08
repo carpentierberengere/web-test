@@ -14,7 +14,7 @@
     <header>
         <nav class="navbar is-transparent is-fixed-top" role="navigation" aria-label="main navigation">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#">
+                <a href="#home" class="navbar-item" href="#">
                     <img class="logo-header" src="./assets/logo.png" width="100%">
                 </a>
                 <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
@@ -25,13 +25,13 @@
             </div>
             <div class="navbar-menu" id="navMenu">
                 <div class="navbar-end">
-                    <a class="navbar-item">
+                    <a href="#work" class="navbar-item">
                         Work
                     </a>
-                    <a class="navbar-item">
+                    <a href="#about" class="navbar-item">
                         About
                     </a>
-                    <a class="navbar-item">
+                    <a href="#contact" class="navbar-item">
                         Contact
                     </a>
                 </div>
@@ -42,82 +42,17 @@
     <body>
 
         <!------HOMEPAGE------>
-        <section class="homepage">
+        <section id="home" class="homepage">
 
             <h1 class="home-title">Hello world!</h1>
             <h3 class="home-sub">I am a young creative designer and front web developer, living and working in Brussels,
                 Belgium.</h3>
-            <button class="home-button">view work</button>
+            <button class="home-button"><a href="#work">view work</a></button>
 
-        </section>
-
-        <!------PROJECTS------>
-        <section class="projects">
-            <h1 class="projects-title">Selected Projects</h1>
-            <h3 class="projects-sub">Here you will find some of my past work and projects </h3>
-
-            <div class="columns">
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <img src="./assets/img-pro.png" alt="random image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <p class="title is-4">Project 1</p>
-                            </div>
-                            <div class="content">
-                                This is a small explanation of the project, including my role and the general outcome.
-                            </div>
-                            <button>CTA</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <img src="./assets/img-pro.png" alt="random image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <p class="title is-4">Project 2</p>
-                            </div>
-                            <div class="content">
-                                This is a small explanation of the project, including my role and the general outcome.
-                            </div>
-                            <button>CTA</button>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="column is-one-third">
-                    <div class="card">
-                        <div class="card-image">
-                            <figure class="image is-1by1">
-                                <img src="./assets/img-pro.png" alt="random image">
-                            </figure>
-                        </div>
-                        <div class="card-content">
-                            <div class="card-title">
-                                <p class="title is-4">Project 3</p>
-                            </div>
-                            <div class="content">
-                                This is a small explanation of the project, including my role and the general outcome.
-                            </div>
-                            <button>CTA</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </section>
 
         <!------ABOUT ME------>
-        <section class="about">
+        <section id="about" class="about">
             <div class="columns">
                 <div class="column is-half">
                     <figure>
@@ -127,18 +62,145 @@
                 <div class="column is-half">
                     <div class="content-about">
                         <h1 class="about-title">Hello there !</h1>
-                        <p class="about-sub">This is gonna be a small paragraph about me, where I’ll share some of my
-                            passions, work ethic
-                            and overall present myself to the world !
-                            I will also explain what I do, like to do and my overall design style.</p>
+                        <p class="about-sub">Fueled by creativity and a client-based view, I love to create fun, sleek and original webpages. Continuously learning, I’m eager to know more and more about the vast world of coding, to provide you all with the best web experiences and interfaces.
+                            Any questions ? Don't hesitate to send me an email or slide into my dms! </p>
                     </div>
 
                 </div>
             </div>
         </section>
 
+        <!------PROJECTS------>
+        <section id="work" class="projects">
+            <h1 class="projects-title">Selected Projects</h1>
+            <h3 class="projects-sub">Here you will find some of my past work and projects, drag each card left or right to discover my work </h3>
+
+            <div class="container">
+                <div class="card-carousel">
+
+                    <div class="card" id="1">
+                        <!------Feed Your Brain------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="JSCalculator">
+                        <h4><b>Calculator</b></h4>
+                        <p>Online Calculator made with JavaScript, HTML5 and some CSS3.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/calculator" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/calculator/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="2">
+                        <!--------JS Maze--------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="JSMaze">
+                        <h4><b>AMazeing</b></h4>
+                        <p>Online Maze made with JavaScript, HTML5 and some CSS3.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/amazeing" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/amazeing/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="3">
+                        <!-------Collection------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="Collection">
+                        <h4><b>Collection</b></h4>
+                        <p>Collection made using the Bulma framework, HTML5 and some CSS3.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/collection" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/collection/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="4">
+                        <!-----------Snake Game------------>
+                        <img class="card_img" src="./assets/visu-pro.png" alt="snakeJS">
+                        <h4><b>Snake Game</b></h4>
+                        <p>A good old snake game made with Javascript and HTML/CSS Basics.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/snakeJS" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/snakeJS/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="5">
+                        <!-----Rock Paper Scissor--------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="RockPaperScissor">
+                        <h4><b>Rock Paper Scissor</b></h4>
+                        <p>Rock Paper Scissor, made using Javascript and HTML/CSS Basics.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/RockPaperScissor-Game" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/RockPaperScissor-Game/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="6">
+                        <!-----Cookie Clicker-------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="RockPaperScissor">
+                        <h4><b>Cookie Clicker</b></h4>
+                        <p>A Cookie Clicker game, made using ReactJS.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/react-clicker" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/react-clicker/" target="_blank"><i class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="7">
+                        <!-----Zodiac------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="FindYourZodiac">
+                        <h4><b>Find Your Zodiac</b></h4>
+                        <p>Find your zodiac sign!</br> Made with HTML/CSS Basics and Javascript.</p>
+                        <div class="visu">
+                            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="#" target="_blank"><i class="far fa-eye"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="card" id="8">
+                        <!-----FrontEnd Challenges-------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="LeavingTheHill">
+                        <h4><b>Front-End Challenges</b></h4>
+                        <p>Four challenges made to consolidate our front-end skills.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/FrontEnd-Challenges" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/FrontEnd-Challenges/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="card" id="9">
+                        <!------Turlututu Project------->
+                        <img class="card_img" src="./assets/visu-pro.png" alt="Turlututu">
+                        <h4><b>Turlututu</b></h4>
+                        <p>Remaking a website one-page based on a given image, made with HTML5 and CSS3.</p>
+                        <div class="visu">
+                            <a href="https://github.com/carpentierberengere/turlututu" target="_blank"><i
+                                    class="fab fa-github"></i></a>
+                            <a href="https://carpentierberengere.github.io/turlututu/" target="_blank"><i
+                                    class="far fa-eye"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" class="visuallyhidden card-controller">Carousel controller</a>
+            </div>
+
+        </section>
+
+
         <!------CONTACT------->
-        <section class="contact">
+        <section id="contact" class="contact">
 
             <div class="contact-content">
                 <h1 class="contact-title">Let's keep in touch!</h1>
@@ -208,6 +270,7 @@
     </body>
 
     <script src="./nav.js"></script>
+    <script src="./carousel.js"></script>
 </body>
 
 
