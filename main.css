@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rufina:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@900&display=swap');
+
+/*font-family: 'Rufina', serif;*/
+/*font-family: 'Yaldevi', sans-serif;*/
+/*font-family: 'Playfair Display', serif;*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*NAVBAR STYLING*/
+header{
+    font-family: 'Rufina', serif;
+}
+/*HOMEPAGE STYLING*/
+.homepage{
+    height:400px;
+    text-align:center;
+    line-height:50px;
+    background-image:url(./assets/background-img.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.home-title{
+    font-family: 'Playfair Display', serif;
+    font-size:60px;
+    color:black;
+    margin-top:10%;
+}
+.home-sub{
+    font-family: 'Yaldevi', sans-serif;
+    font-size:29px;
+    margin-top:20px;
+}
+button{
+    padding:5px;
+    border-radius:10px;
+    border:none;
+    background-color: #ECD6B5;
+}
+.home-button{
+    margin-top:4%;
+}
+
+/*Project Section Styling*/
+.projects{
+    background-color: #E5B383;
+}
+.projects-title{
+    font-size:30px;
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    color:black;
+}
+.projects-sub{
+    text-align:center;
+    font-size:20px;
+    font-family: 'Yaldevi', sans-serif;
+}
+.card-title{
+    font-family: 'Rufina', serif;
+    font-weight:bold;
+}
+.content{
+    font-family: 'Yaldevi', sans-serif; 
+}
+.card:hover {
+    transform: scale(1.01);
+}
+
+/*Contact Section Styling*/
+.contact{
+    margin-top:50px;
+    text-align:center;
+    background-color:  #E5B383    ;
+}
+.contact-title{
+    font-size:30px;
+    text-align:center;
+    font-family: 'Playfair Display', serif;
+    color:black;
+}
+.contact-sub{
+    text-align:center;
+    font-size:20px;
+    font-family: 'Yaldevi', sans-serif;
+}
+.contact-socials{
+    margin-top:5%;
+}
+.socials-logo{
+    width:50%;
+}
+.socials-title{
+    font-family: 'Playfair Display', serif;
+    color:black; 
+}
+
+/*About Section Styling*/
+.about-title{
+    font-family: 'Playfair Display', serif;
+    color:black;
+    font-size:35px;
+}
+.about-sub{
+    font-family: 'Yaldevi', sans-serif;
+    font-size:23px;
+    
+}
+.content-about{
+    text-align:center;
+    margin-top:25%;
+}
+
+/*Footer Section Styling*/
+footer{
+    margin-top:2.5%;
+}
+.logo-footer{
+    width:40%;
+}
+.section-footer li{
+    margin-top:4%;
+    font-family: 'Playfair Display', serif;
+}
+.socials-footer li{
+    margin-top:2.5%;
+    font-family: 'Playfair Display', serif;
+}
+.footer-sub{
+    text-align:center;
+    font-size:10px;
+    font-family: 'Yaldevi', sans-serif;
+}
